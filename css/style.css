@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+.mainmenu {
+    background-color: navy;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid black;
+}
+
+.mainmenu button {
+    margin: 25px 0px;
+    height: 50px;
+    width: 150px;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+    margin: 50px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.unvisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
