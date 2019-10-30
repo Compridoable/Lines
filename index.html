@@ -7,6 +7,8 @@
     </head>
     <body>
         <section class="topbar">
+            <div class="com comment">Start new game!</div>
+            <div class="com comment2">O to to</div>
             <div class="mainmenu">
                 <button class="newgame">New game</button>
                 <button class="size">Size</button>
@@ -15,11 +17,22 @@
                 <button class="exit">Exit</button>
             </div>
         </section>
-        <section class="game">
-            <div class="board visible">
-            </div>
+        <section id="game">
+            <div id="board-target"></div>
+                
+
         </section>
+        
         <section class="footer"></section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="node_modules/mustache/mustache.min.js"></script>
+        <script type="mustache/x-tmpl" id="board-temp">
+            <div id="board" class="board">
+                {{{squares}}}
+
+            </div>
+        </script>
         <script src="js/script.js"></script>
     </body>
 </html>
